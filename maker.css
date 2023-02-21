@@ -1,0 +1,196 @@
+a{
+    text-decoration: none;
+    color:rgb(30, 25, 25);
+}
+
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+.button{
+    background-color: hsl(66, 39%, 49%); /* Green */
+    border:2px;
+    color: #74e728;
+    padding: 15px 32px;
+    text-align:right;
+    text-decoration: none;
+    display:contents;
+    font-size: 16px; 
+    font-display: 12px;
+}
+#make{
+    width: 20rem;
+    height: 20rem;
+    background-color: hsla(29, 75%, 50%, 0.64)
+    (124 23% 19%);
+}
+i::first-line{
+    color: blueviolet;
+}
+li::first-letter{
+    color: #2600ff;
+}
+li:first-child{
+    width: 250px; padding: 20px; 
+}
+ li::before{
+    content: '';
+    color: aqua;
+ }
+ #under{
+    position: absolute;
+    font-family: Georgia, serif;
+    font-size: 15px;
+    color: pink;
+    top: 850px; left: 5 0px;
+    border: 0px solid #73AD21;
+    background-color: lightgrey;
+    width: 300px;
+    height: 200px;
+    
+ }
+
+#col{
+width: 20%;
+height: 25rem;
+background-color: rgb(114, 24, 216)
+(124 23% 19%);
+margin-bottom: 1rem;
+ }
+ #column{
+    width: 20%;
+    height: 25rem;
+    background-color: #85d818
+    (124 23% 19%);
+    margin-bottom: 1rem;
+        visibility:visible;
+       
+     }
+#column1{
+        width: 20%;
+        height: 25rem;
+        background-color: #85d818
+        (124 23% 19%);
+        margin-bottom: 1rem;
+       
+}
+.maker{
+    width: 92rem;
+    height: 28rem;
+    background-color: #1fde7ba3
+    (124 22% 19%);
+    display: flex;
+}
+#button1:hover {
+    background-color: #23f6f2;
+    border: 0px;
+    padding: 15px 0px;	
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #58e81a;
+}
+body{ padding: 20px; font-family: sans-serif; }
+        nav{  height: 35px; background-color: green; padding: 3px; }
+        nav ul{  display: flex; }
+        nav ul li{ list-style-type: none;   }
+        nav ul li a{
+            transition: all ease-in-out 0.5s;
+            letter-spacing: 1px; text-transform: uppercase; margin-right: 1px;
+            text-decoration: none; color: white; font-size: 13px;
+            background: rgb(2, 55, 2); padding: 7px 18px; line-height: 30px;
+        }
+        nav ul li a:hover{ color: yellow; background-color: black; }
+        nav ul li ul{
+            position: absolute; z-index: 100; display: block;
+            height: 0; overflow: hidden; transition: all ease-in-out 0.5s;
+        }
+        nav ul li:hover ul{
+            height: 150px;
+        }
+        nav ul li ul li{
+            border-bottom: 1px solid green;
+        }
+        nav ul li ul li a{
+            width: 200px; display: block; padding: 0 18px; font-size: 12px;
+        }
+        .body1{
+            width: 1460px;
+            height: 500px;
+            opacity:0.;
+            background-image: url("4882066.jpg");
+            background-color: rgb(217, 177, 45);
+            color: #e7dddd;
+            float: right;
+          } 
+
+
+          #hamburgerMenu nav{
+            width: 200px; position: absolute; z-index: 100;
+            top: 5px;
+            background-image: linear-gradient(to left, #033c03, #55ab55);
+            float: left;
+        }
+        
+        #hamburgerMenu nav ul li{
+            list-style-type: none;
+            border-bottom: 1px dashed white;
+        }
+        #hamburgerMenu nav ul li a{
+            color: white;
+            font: bold 13px sans-serif;
+            letter-spacing: 1px;
+            text-decoration: none;
+            display: block;
+            padding: 8px 10px;
+        }
+        #hamburgerMenu nav ul li a:hover{
+            color: yellow;
+            background-image: linear-gradient(to right, #033c03, #55ab55);
+        }
+        #hamburgerMenu #chkMenu{
+            display: none;
+        }
+        #hamburgerMenu #chkMenu ~ nav{
+            left: -300px;
+            position: absolute;
+            z-index: 100;
+            top: 30px;
+            transition: all ease-in-out 300ms;
+        }
+        #hamburgerMenu #chkMenu:checked ~ nav{
+            left: 0;
+        }
+        #hamburgerMenu label{ 
+            position: relative; 
+            width: 30px; 
+            height: 20px; 
+            display: block; 
+            background-color: rgb(255, 255, 255); 
+            left: 10px;
+        }
+        #hamburgerMenu label #line1{
+            width: 30px; height: 2px; background-color: rgb(0, 0, 0);
+            position: absolute; z-index: 1; top: 0; border-radius: 3px;
+            transition: all ease-in-out 300ms;
+        }
+        #hamburgerMenu label #line2{
+            width: 30px; height: 2px; background-color: rgb(0, 0, 0);
+            position: absolute; z-index: 1; top: 10px; border-radius: 3px;
+        }
+        #hamburgerMenu label #line3{
+            transition: all ease-in-out 300ms;
+            width: 30px; height: 2px; background-color: rgb(0, 0, 0);
+            position: absolute; z-index: 1; top: 20px; border-radius: 3px;
+        }
+
+        #hamburgerMenu #chkMenu:checked ~ label #line2{
+            display: none;
+        }
+        #hamburgerMenu #chkMenu:checked ~ label #line1{
+            top: 9px;
+            transform: rotate(225deg);
+        }
+        #hamburgerMenu #chkMenu:checked ~ label #line3{
+            top: 9px;
+            transform: rotate(-225deg);
+        }
